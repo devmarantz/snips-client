@@ -33,7 +33,7 @@ export default [
   {
     id: '4',
     author: 'Andrew',
-    code: '<link rel="stylesheet" type="text/css" href="theme.css">',
+    code: '<link rel="stylesheet" type="text/css" href="theme.css"></link>',
     title: 'link.html',
     description: 'How to link a stylesheet',
     language: 'HTML',

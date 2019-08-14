@@ -10,7 +10,7 @@ const renderSnips = snippets => {
       <h2>${snippet.title}</h2>
       <p>${snippet.description}</p>
     </div>
-    <pre><code class="${snippet.language}">${snippet.code}</code></pre>
+    <pre><code class="${snippet.language}">${he.encode(snippet.code)}</code></pre>
   </div>`
     )
     .join('');
