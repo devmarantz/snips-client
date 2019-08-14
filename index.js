@@ -1,36 +1,24 @@
-const snippets = document.getElementById('snippets');
+import SNIPS from './snippet-data.js';
 
+const renderSnips = snippets => {
+  // map over the SNIPS transform that into the HTML
+  const snippetHTML = snippets
+    .map(
+      snippet => /*html*/ `
+  <div class='snip'>
+    <div class='text'>
+      <h2>${snippet.title}</h2>
+      <p>${snippet.description}</p>
+      <pre><code>${snippet.code}</code></pre>
+    </div>
+  </div>`
+    )
+    .join('');
 
-// setTimeout(()=>{
-//   snippets.style.backgroundColor = 'red';
-// }, 2000);
+  // put that HTML into #snippets
+  const snippetsElem = document.getElementById('snippets');
+  snippetsElem.innerHTML = snippetHTML;
+  console.log(snippetsElem);
+};
 
-
-// setTimeout(()=>{
-//   snippets.innerHTML = '<h2>WELCOME YO!<h2>';
-// }, 4000);
-
-
-// const h2 = snippets.querySelector('h2');
-// h2.style.fontSize = '100px';
-
-// const h2s = snippets.querySelectorAll('h2');  //array of h2
-// h2s.forEach(h2 => (h2.style.fontSize = '27px'))
-
-setInterval(()=>{
-  // create a new element
-  const button = document.createElement('button');
-  // set its text
-  button.innerText='Answer survey';
-  // add it to the body
-  document.body.append(button)
-}, 2000);
-
-function survey() {
-  prompt('How are you enjoying your time?');
-  // sends to server
-}
-
-function aggresiveButton(button) {
-  button.innerHTML = `${button.innerHTML.toUpperCase()}PLEASE! `;
-}     
+renderSnips(SNIPS);
