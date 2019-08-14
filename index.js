@@ -9,8 +9,8 @@ const renderSnips = snippets => {
     <div class='text'>
       <h2>${snippet.title}</h2>
       <p>${snippet.description}</p>
-      <pre><code>${snippet.code}</code></pre>
     </div>
+    <pre><code class="${snippet.language}">${snippet.code}</code></pre>
   </div>`
     )
     .join('');
@@ -22,3 +22,5 @@ const renderSnips = snippets => {
 };
 
 renderSnips(SNIPS);
+
+hljs.initHighlightingOnLoad();
