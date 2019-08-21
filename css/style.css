@@ -18,8 +18,18 @@ body {
 #competitors {
   background-color: var(--snips-purple);
   text-align: center;
+  height: 21rem;
 }
 
+.competitor{
+  max-width: 11rem;
+  padding: 0px 3rem;
+}
+
+.icon-container{
+  margin: 3rem 0;
+
+}
 
 .info-block{
   display: grid;
