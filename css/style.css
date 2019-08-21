@@ -16,8 +16,10 @@ body {
 }
 
 #competitors {
-  background-color: blueviolet;
+  background-color: var(--snips-purple);
+  text-align: center;
 }
+
 
 .info-block{
   display: grid;
