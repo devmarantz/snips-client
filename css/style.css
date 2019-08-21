@@ -14,3 +14,21 @@ html {
 body {
   background-color: #EBEBEC
 }
+
+#competitors {
+  background-color: blueviolet;
+}
+
+.info-block{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 2rem;
+}
+
+.info-block img {
+  width: 100%;
+}
+
+.info-block p{
+  padding: 2rem;
+}

@@ -15,13 +15,10 @@
   }
 
   header {
-    padding: 10px 2em;
+    padding: 20px 2em;
     background-color: var(--snips-grey);
   }
 
   /* TODO: Footer styling */
   
-  #competitors {
-    background-color: blueviolet;
-  }
   
