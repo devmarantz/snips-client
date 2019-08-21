@@ -3,7 +3,7 @@
   min-height: 300px;
   padding: 50px;
   background: linear-gradient(hsla(0, 0%, 0%, 0.7), hsla(0, 0%, 0%, 0.7)),
-    url(images/python-tweets-code-snippet.png);
+    url(../images/python-tweets-code-snippet.png);
   /* background-repeat: no-repeat; */
   background-size: cover;
   color: white;
